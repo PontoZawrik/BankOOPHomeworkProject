@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BankOOPHomeworkProject", "BankOOPHomeworkProject\BankOOPHomeworkProject.vcxproj", "{77FFEF05-67C0-44EE-B705-63F93C22A2E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Debug|x64.ActiveCfg = Debug|x64
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Debug|x64.Build.0 = Debug|x64
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Debug|x86.Build.0 = Debug|Win32
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Release|x64.ActiveCfg = Release|x64
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Release|x64.Build.0 = Release|x64
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Release|x86.ActiveCfg = Release|Win32
+		{77FFEF05-67C0-44EE-B705-63F93C22A2E0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF8DF43D-8C58-4671-B5DF-155B07C7E11C}
+	EndGlobalSection
+EndGlobal
