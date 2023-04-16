@@ -1,6 +1,6 @@
 #include "main.h"
 
-class account {
+class Account {
 public:
 	string name;
 	string surname;
@@ -21,15 +21,36 @@ public:
 		email = "not specified";
 		password = "none";
 	}
+
+	
+	Account() {
+		name = "no name";
+		surname = "no surname";
+		email = "not specified";
+		password = "none";
+	}
+
+	Account(string nm, string surnm, string eml, string passwrd) {
+		name = nm;
+		surname = surnm;
+		email = eml;
+		password = passwrd;
+	}
+
+	Account(Account &account) {
+		name = account.name;
+		surname = account.surname;
+		email = account.email;
+		password = account.password;
+	}
+
+	~Account() {
+
+	}
 };
 
 int main() {
-	account ac;
-
-	ac.name = "Steve";
-	ac.surname = "Ivanov";
-	ac.email = "blabla@gmail.com";
-	ac.password = "2432";
+	Account ac("Steve", "Ivanov", "blabla@gmail.com", "2432");
 
 	cout << "Before: " << endl;
 	cout << ac.info() << endl;
