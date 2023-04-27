@@ -2,28 +2,13 @@
 #include "main.h";
 
 class Account {
-public:
+private:
 	string name;
 	string surname;
 	string email;
 	string password;
 
-	string info() {
-		string msg = "";
-		msg += name + " " + surname;
-		msg += "\nemail: " + email;
-		msg += "\npassword: " + password;
-		return msg;
-	}
-
-	void clear() {
-		name = "no name";
-		surname = "no surname";
-		email = "not specified";
-		password = "none";
-	}
-
-
+public:
 	Account() {
 		name = "no name";
 		surname = "no surname";
@@ -48,4 +33,47 @@ public:
 	~Account() {
 
 	}
+
+	string getName() {
+		return name;
+	}
+	void setName(string n) {
+		name = n;
+	}
+	string getSurname() {
+		return surname;
+	}
+	void setSurname(string n) {
+		surname = n;
+	}
+	string getEmail() {
+		return email;
+	}
+	void setEmail(string n) {
+		email = n;
+	}
+	string getPassword() {
+		return password;
+	}
+	void setPassword(string n) {
+		password = n;
+	}
+
+	string info() {
+		string msg = "";
+		msg += name + " " + surname;
+		msg += "\nemail: " + email;
+		msg += "\npassword: " + password;
+		return msg;
+	}
+
+	void clear() {
+		name = "no name";
+		surname = "no surname";
+		email = "not specified";
+		password = "none";
+	}
+
+
+	
 };
