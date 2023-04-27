@@ -9,71 +9,23 @@ private:
 	string password;
 
 public:
-	Account() {
-		name = "no name";
-		surname = "no surname";
-		email = "not specified";
-		password = "none";
-	}
+	Account();
+	Account(string nm, string surnm, string eml, string passwrd);
+	Account(Account& account);
+	~Account();
 
-	Account(string nm, string surnm, string eml, string passwrd) {
-		name = nm;
-		surname = surnm;
-		email = eml;
-		password = passwrd;
-	}
+	string getName();
+	void setName(string n);
 
-	Account(Account& account) {
-		name = account.name;
-		surname = account.surname;
-		email = account.email;
-		password = account.password;
-	}
+	string getSurname();
+	void setSurname(string n);
 
-	~Account() {
+	string getEmail();
+	void setEmail(string n);
 
-	}
+	string getPassword();
+	void setPassword(string n);
 
-	string getName() {
-		return name;
-	}
-	void setName(string n) {
-		name = n;
-	}
-	string getSurname() {
-		return surname;
-	}
-	void setSurname(string n) {
-		surname = n;
-	}
-	string getEmail() {
-		return email;
-	}
-	void setEmail(string n) {
-		email = n;
-	}
-	string getPassword() {
-		return password;
-	}
-	void setPassword(string n) {
-		password = n;
-	}
-
-	string info() {
-		string msg = "";
-		msg += name + " " + surname;
-		msg += "\nemail: " + email;
-		msg += "\npassword: " + password;
-		return msg;
-	}
-
-	void clear() {
-		name = "no name";
-		surname = "no surname";
-		email = "not specified";
-		password = "none";
-	}
-
-
-	
+	string info();
+	void clear();
 };
