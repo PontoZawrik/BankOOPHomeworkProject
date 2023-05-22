@@ -1,8 +1,8 @@
 #include "main.h"
-#include "Account.h"
+#include "user.h"
 
 int main() {
-	Account ac("Steve", "Ivanov", "blabla@gmail.com", "2432");
+	User ac("Steve", "Ivanov", "blabla@gmail.com", "2432");
 
 	system("pause");
 	return 0;

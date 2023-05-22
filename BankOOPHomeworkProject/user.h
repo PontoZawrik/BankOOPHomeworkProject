@@ -1,7 +1,7 @@
 #pragma once
 #include "main.h";
 
-class Account {
+class User {
 private:
 	string name;
 	string surname;
@@ -9,10 +9,10 @@ private:
 	string password;
 
 public:
-	Account();
-	Account(string nm, string surnm, string eml, string passwrd);
-	Account(Account& account);
-	~Account();
+	User();
+	User(string nm, string surnm, string eml, string passwrd);
+	User(User& account);
+	~User();
 
 	string getName();
 	void setName(string n);

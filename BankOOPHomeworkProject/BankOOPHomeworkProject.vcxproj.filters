@@ -18,10 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="account.cpp">
+    <ClCompile Include="user.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="banking_card.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="bank_account.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,10 +32,13 @@
     <ClInclude Include="main.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
-    <ClInclude Include="account.h">
+    <ClInclude Include="user.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
     <ClInclude Include="banking_card.h">
+      <Filter>Файлы ресурсов</Filter>
+    </ClInclude>
+    <ClInclude Include="bank_account.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
   </ItemGroup>

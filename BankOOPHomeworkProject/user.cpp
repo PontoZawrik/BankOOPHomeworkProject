@@ -1,56 +1,56 @@
-#include "account.h"
+#include "user.h"
 
-Account::Account() {
+User::User() {
 	name = "no name";
 	surname = "no surname";
 	email = "not specified";
 	password = "none";
 }
 
-Account::Account(string nm, string surnm, string eml, string passwrd) {
+User::User(string nm, string surnm, string eml, string passwrd) {
 	name = nm;
 	surname = surnm;
 	email = eml;
 	password = passwrd;
 }
 
-Account::Account(Account& account) {
+User::User(User& account) {
 	name = account.name;
 	surname = account.surname;
 	email = account.email;
 	password = account.password;
 }
 
-Account::~Account() {
+User::~User() {
 
 }
 
-string Account::getName() {
+string User::getName() {
 	return name;
 }
-void Account::setName(string n) {
+void User::setName(string n) {
 	name = n;
 }
-string Account::getSurname() {
+string User::getSurname() {
 	return surname;
 }
-void Account::setSurname(string n) {
+void User::setSurname(string n) {
 	surname = n;
 }
-string Account::getEmail() {
+string User::getEmail() {
 	return email;
 }
-void Account::setEmail(string n) {
+void User::setEmail(string n) {
 	email = n;
 }
-string Account::getPassword() {
+string User::getPassword() {
 	return password;
 }
-void Account::setPassword(string n) {
+void User::setPassword(string n) {
 	password = n;
 }
 
-string Account::info() {
+string User::info() {
 	string msg = "";
 	msg += name + " " + surname;
 	msg += "\nemail: " + email;
@@ -58,7 +58,7 @@ string Account::info() {
 	return msg;
 }
 
-void Account::clear() {
+void User::clear() {
 	name = "no name";
 	surname = "no surname";
 	email = "not specified";
